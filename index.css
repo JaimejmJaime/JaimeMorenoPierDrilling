@@ -1,0 +1,188 @@
+/* Add your company colors */
+:root {
+  --primary-color: rgb(240, 187, 82);
+  --secondary-color: rgb(1, 159, 192);
+  --text-color: white;
+}
+
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set basic styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Update the header background color */
+header {
+    position: fixed; /* Freeze the header in place */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999; /* Ensure the header appears on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    margin-right: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    display: flex;
+}
+
+.contact-info ul li {
+    margin-right: 10px;
+}
+
+.contact-info ul li i {
+    margin-right: 5px;
+}
+
+.logo img {
+    height: auto; /* Remove the fixed height property */
+    max-height: 60px; /* Set a maximum height to maintain the aspect ratio */
+    max-width: 100%; /* Ensure the logo scales proportionally */
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold; /* Make the company name more prominent */
+    margin-bottom: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+/* Update the navigation link color */
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold; /* Make the navigation links more prominent */
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Add some spacing to the social media icon */
+nav ul li:last-child {
+    margin-right: 10px;
+}
+
+/* Adjust the Facebook icon style */
+nav ul li:last-child a {
+    color: #333;
+    font-size: 20px;
+}
+
+main {
+    padding: 20px;
+    margin-top: 80px; /* Add a slightly larger margin-top to create more space below the header */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer .logo img {
+    height: auto;
+    max-height: 150px;
+    max-width: 100%;
+}
+
+footer .footer-text {
+    margin-top: 10px;
+}
+
+/* Add styles for Call-to-Action Buttons */
+.cta-buttons {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Add CSS for responsive design */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screen sizes */
+    .logo img {
+        max-height: 50px;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+
+    /* Modify other styles as needed */
+}
