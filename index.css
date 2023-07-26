@@ -184,5 +184,9 @@ footer .footer-text {
         font-size: 20px;
     }
 
+    .contact-info {
+        display: none;
+    }
+
     /* Modify other styles as needed */
 }
